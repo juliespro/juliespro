@@ -1,4 +1,4 @@
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/diogorodrigues/iceberg-gatsby-multilang) 
+<!-- [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/diogorodrigues/iceberg-gatsby-multilang)  -->
 
 <img src="./src/images/logo-iceberg.svg" width="150">
 
