@@ -11,13 +11,13 @@ module.exports = {
     defaultTitle: `Gatsby Starter with multi-language and CMS`,
     defaultDescription: `Gatsby example site using Markdown, i18n and CMS`,
   },
-  pt: {
-    path: `pt`,
-    locale: `pt-BR`,
-    dateFormat: `DD/MM/YYYY`,
-    siteLanguage: `pt`,
-    ogLanguage: `pt_BR`,
-    defaultTitle: `Gatsby Starter multilingue com CMS`,
-    defaultDescription: `Exemplo de Gatsby site usando Markdown, i18n e CMS`,
+  tw: {
+    path: `tw`,
+    locale: `zh-TW`,
+    dateFormat: `YYYY/MM/DD`,
+    siteLanguage: `zh`,
+    ogLanguage: `zh_TW`,
+    defaultTitle: `茱麗 PRO 部落格`,
+    defaultDescription: `學術 * 登山 * 生活`,
   },
 }
