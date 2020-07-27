@@ -1,0 +1,8 @@
+{
+  "menuItems": [
+    { "name": "首頁", "link": "/" },
+    { "name": "文章", "link": "/blog" },
+    { "name": "關於我", "link": "/about" },
+    { "name": "聯絡我", "link": "/contact" }
+  ]
+}

@@ -53,10 +53,10 @@ const Languages = () => {
       <S.LanguageItem>
         <S.LanguageLink 
           to="/" 
-          onClick={(e) => handleClickLanguage(e, "pt")}
-          className={locale === 'pt' ? 'is-active' : ''}
+          onClick={(e) => handleClickLanguage(e, "tw")}
+          className={locale === 'tw' ? 'is-active' : ''}
         >
-          PT
+          中
         </S.LanguageLink>
       </S.LanguageItem>
     </S.LanguageWrapper>

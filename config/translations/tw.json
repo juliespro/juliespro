@@ -1,9 +1,9 @@
 {
-  "home": "Início",
+  "home": "首頁",
 
-  "hello": "Site multilíngue em Gatsby",
-  "subline": "Internacionalização / i18n sem plugins ou pacotes de terceiros para Posts e Páginas. URLs diferentes dependendo do idioma. Foco em SEO, PWA, Otimização de imagens, Styled Components e muito mais. Esse starter também é integrado ao Netlify CMS para gerenciar todas as páginas, posts e imagens.",
-  "latestPosts": "Útimos posts",
+  "hello": "歡迎來到茱麗 PRO 部落格",
+  "subline": "在這裡，我記錄一些 R語言 、 SPSS 、 SASS 的學習筆記與一些登山的旅遊紀錄！ ",
+  "latestPosts": "最新文章",
   "category": "Categoria",
   "allPosts": "Todos os Posts",  
   "toRead": "de leitura",
