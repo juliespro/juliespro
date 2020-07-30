@@ -15,6 +15,7 @@ exports.onCreatePage = ({ page, actions }) => {
 
   // Grab the keys ('en' & 'pt') of locales and map over them
   Object.keys(locales).map(lang => {
+    console.log(lang)
     // Use the values defined in "locales" to construct the path
     const localizedPath = locales[lang].default
       ? page.path

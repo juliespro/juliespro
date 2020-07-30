@@ -17,7 +17,7 @@ module.exports = {
     dateFormat: `YYYY/MM/DD`,
     siteLanguage: `zh`,
     ogLanguage: `zh_TW`,
-    defaultTitle: `茱麗 PRO 部落格`,
+    defaultTitle: `茱麗部落`,
     defaultDescription: `學術 * 登山 * 生活`,
   },
 }

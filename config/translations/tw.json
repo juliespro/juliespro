@@ -1,11 +1,11 @@
 {
   "home": "首頁",
 
-  "hello": "歡迎來到茱麗 PRO 部落格",
-  "subline": "在這裡，我記錄一些 R語言 、 SPSS 、 SASS 的學習筆記與一些登山的旅遊紀錄！ ",
+  "hello": "歡迎來到茱麗部落",
+  "subline": "在這裡，我記錄一些 R語言 、 SPSS 、 SAS 的學習筆記與一些登山的旅遊紀錄！ ",
   "latestPosts": "最新文章",
-  "category": "Categoria",
-  "allPosts": "Todos os Posts",  
+  "category": "標籤",
+  "allPosts": "所有文章",  
   "toRead": "de leitura",
 
   "next": "Próximo",
