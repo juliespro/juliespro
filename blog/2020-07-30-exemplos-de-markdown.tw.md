@@ -1,165 +1,23 @@
 ---
-title: 這是我的第一篇中文文章
-description: 這是第一篇中文文章喔!
-date: '2019-03-22 01:21:23'
-image: /assets/img/03.jpg
+title: 玉山前四峰
+description: 玉山主峰、北峰、西峰、前鋒
+date: '2019-07-15 08:30:23'
+image: /assets/img/jade.jpg
 category: Others
-background: '#e58e26'
+background: '#bdc3c7'
 ---
-測試一下是否可以在線上更改
+## 行程：
 
-O Markdown deve ser o mais fácil de ler e escrever o mais possível.
+第一天
 
-A legibilidade, no entanto, é enfatizada acima de tudo. Um documento no formato Markdown deve ser publicado como está, como texto sem formatação, sem parecer ter sido marcado com tags ou instruções de formatação. Embora a sintaxe do Markdown tenha sido influenciada por vários filtros de texto para HTML existentes - incluindo Setext, atx, Textile, reStructuredText, Grutatext e EtText - a maior fonte de inspiração para a sintaxe do Markdown é o formato de email em texto sem formatação.
+07:00 台中出發→10:00塔塔加停車場→10:30前往鹿林前山(順序:鹿林前山→鹿林山→麟趾山，地圖如下)→12:30午餐+午覺(時間沒有一定，餓了可以提早)→混到兩點左右下山→3:00東埔山莊入房→休息泡茶聊天發懶到4:00→看天氣狀況步行前往東埔山約6:00前下山→回程看落日與星空→吃飯洗澡睡覺(記得準備一套洗澡換洗衣物)    當天日落時間約6:40-6:50間
 
-Para esse fim, a sintaxe de Markdown é composta inteiramente de caracteres de pontuação, caracteres de pontuação que foram cuidadosamente escolhidos para parecer com o que significam. Por exemplo, asteriscos em torno de uma palavra realmente se parecem com  _ênfase_ . Listas de remarcação parecem, bem, listas. Até as citações em bloco parecem passagens de texto citadas, desde que você já tenha usado o e-mail.
 
-## Headers
 
-```Markdown
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
+第二天(7/14)
 
-Alternatively, for H1 and H2, an underline-ish style:
+7:30起床(應該不為過)→8:00排管處報到(1.帶身分證 2.排管處有熱水記得去裝)→8:30登山口→11:00西峰觀景台→13:00排雲山莊→15:00玉山西峰→17:00排雲山莊(晚餐)→18:00自由活動→19:00開始睡
 
-Alt-H1
-======
 
-Alt-H2
-------
-```
 
-# H1
-
-## H2
-
-### H3
-
-#### H4
-
-##### H5
-
-###### H6
-
-## Lists
-
-```Markdown
-1. First ordered list item
-2. Another item
-⋅⋅* Unordered sub-list.
-1. Actual numbers don't matter, just that it's a number
-⋅⋅1. Ordered sub-list
-4. And another item.
-
-⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
-
-⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
-
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses
-```
-
-1. First ordered list item
-2. Another item
-   ⋅⋅* Unordered sub-list.
-3. Actual numbers don't matter, just that it's a number
-   ⋅⋅1. Ordered sub-list
-4. And another item.
-
-⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
-
-⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
-
-* Unordered list can use asterisks
-* Or minuses
-* Or pluses
-
-## Links
-
-```Markdown
-[I'm an inline-style link](https://www.google.com)
-
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself].
-
-URLs and URLs in angle brackets will automatically get turned into links.
-http://www.example.com or <http://www.example.com> and sometimes
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
-```
-
-[I'm an inline-style link](https://www.google.com)
-
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
-[I'm a reference-style link](https://www.mozilla.org)
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions](http://slashdot.org)
-
-Or leave it empty and use the [link text itself](http://www.reddit.com).
-
-URLs and URLs in angle brackets will automatically get turned into links.
-http://www.example.com or <http://www.example.com> and sometimes
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-## Tables
-
-```Markdown
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-```
-
-| Tables        | Are           | Cool  |
-| ------------- | ------------- | ----- |
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      | $12   |
-| zebra stripes | are neat      | $1    |
-
-## Blockquotes
-
-```Markdown
-> Blockquotes are very handy in email to emulate reply text.
-> This line is part of the same quote.
-
-Quote break.
-
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.
-```
-
-> Blockquotes are very handy in email to emulate reply text.
-> This line is part of the same quote.
-
-Quote break.
-
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can _put_ **Markdown** into a blockquote.
-
-[Referência 1](https://daringfireball.net/projects/markdown/syntax#philosophy)
-[Referência 2](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+第三天(7/15)：01:00起床早餐→02:00出發→05:00玉山主峰→07:30排雲山莊→08:30整裝返回→12:00登山口搭接駁車→13:00回程→要吃慶功宴
