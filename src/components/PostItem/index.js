@@ -50,7 +50,7 @@ const PostItem = ({
         // if(img.node.childImageShape == null){
         //   return false;
         // }
-        return img.node.childImageSharp.fluid.src.includes(imgName);
+        return img.node.childImageSharp ? img.node.childImageSharp.fluid.src.includes(imgName): false;
 
       })
     : false;
