@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby multiple language starter`,
-    description: `A simple but feature rich starter boilerplate for creating a multi-language Gatsby website (Internationalization / i18n) without third party plugins or packages and also focused on SEO. This starter also contains other main Gatsby configurations you might need.`,
-    author: `@diogorodrigues`,
-    siteUrl: `https://iceberg-gatsby-multilang.netlify.com/`,
+    title: `茱麗部落`,
+    description: `有關茱麗的學術～旅遊～記趣～`,
+    author: `@txs`,
+    siteUrl: `https://juliespro.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
