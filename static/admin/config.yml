@@ -1,9 +1,9 @@
 backend:
-    # name: github  # Local
-    name: git-gateway # Prod
+    name: github  # Local
+    # name: git-gateway # Prod
     repo: juliespro/juliespro
     branch: master
-    site_domain: https://juliespro.netlify.com/
+    site_domain: https://juliespro.netlify.app/
     
 
 publish_mode: editorial_workflow
