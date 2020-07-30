@@ -1,17 +1,18 @@
 ---
-title: 'Exemplos de Markdown'
+title: 這是我的第一篇中文文章
+description: 這是第一篇中文文章喔!
 date: '2019-03-22 01:21:23'
-description: O Markdown deve ser o mais fácil de ler e escrever o mais possível.
-category: Markdown
-background: '#353b48'
-image: '/assets/img/03.jpg'
+image: /assets/img/03.jpg
+category: Others
+background: '#e58e26'
 ---
+測試一下是否可以在線上更改
 
 O Markdown deve ser o mais fácil de ler e escrever o mais possível.
 
 A legibilidade, no entanto, é enfatizada acima de tudo. Um documento no formato Markdown deve ser publicado como está, como texto sem formatação, sem parecer ter sido marcado com tags ou instruções de formatação. Embora a sintaxe do Markdown tenha sido influenciada por vários filtros de texto para HTML existentes - incluindo Setext, atx, Textile, reStructuredText, Grutatext e EtText - a maior fonte de inspiração para a sintaxe do Markdown é o formato de email em texto sem formatação.
 
-Para esse fim, a sintaxe de Markdown é composta inteiramente de caracteres de pontuação, caracteres de pontuação que foram cuidadosamente escolhidos para parecer com o que significam. Por exemplo, asteriscos em torno de uma palavra realmente se parecem com _ ênfase _. Listas de remarcação parecem, bem, listas. Até as citações em bloco parecem passagens de texto citadas, desde que você já tenha usado o e-mail.
+Para esse fim, a sintaxe de Markdown é composta inteiramente de caracteres de pontuação, caracteres de pontuação que foram cuidadosamente escolhidos para parecer com o que significam. Por exemplo, asteriscos em torno de uma palavra realmente se parecem com  _ênfase_ . Listas de remarcação parecem, bem, listas. Até as citações em bloco parecem passagens de texto citadas, desde que você já tenha usado o e-mail.
 
 ## Headers
 
@@ -67,7 +68,7 @@ Alt-H2
 
 1. First ordered list item
 2. Another item
-   ⋅⋅\* Unordered sub-list.
+   ⋅⋅* Unordered sub-list.
 3. Actual numbers don't matter, just that it's a number
    ⋅⋅1. Ordered sub-list
 4. And another item.
@@ -78,11 +79,9 @@ Alt-H2
 ⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
 ⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
 
--   Unordered list can use asterisks
-
-*   Or minuses
-
--   Or pluses
+* Unordered list can use asterisks
+* Or minuses
+* Or pluses
 
 ## Links
 
@@ -108,30 +107,25 @@ Some text to show that the reference links can follow later.
 [arbitrary case-insensitive reference text]: https://www.mozilla.org
 [1]: http://slashdot.org
 [link text itself]: http://www.reddit.com
-
 ```
 
 [I'm an inline-style link](https://www.google.com)
 
 [I'm an inline-style link with title](https://www.google.com "Google's Homepage")
 
-[I'm a reference-style link][arbitrary case-insensitive reference text]
+[I'm a reference-style link](https://www.mozilla.org)
 
 [I'm a relative reference to a repository file](../blob/master/LICENSE)
 
-[You can use numbers for reference-style link definitions][1]
+[You can use numbers for reference-style link definitions](http://slashdot.org)
 
-Or leave it empty and use the [link text itself].
+Or leave it empty and use the [link text itself](http://www.reddit.com).
 
 URLs and URLs in angle brackets will automatically get turned into links.
 http://www.example.com or <http://www.example.com> and sometimes
 example.com (but not on Github, for example).
 
 Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
 
 ## Tables
 
@@ -143,11 +137,11 @@ Some text to show that the reference links can follow later.
 | zebra stripes | are neat      |    $1 |
 ```
 
-| Tables        |      Are      |   Cool |
-| ------------- | :-----------: | -----: |
-| col 3 is      | right-aligned | \$1600 |
-| col 2 is      |   centered    |   \$12 |
-| zebra stripes |   are neat    |    \$1 |
+| Tables        | Are           | Cool  |
+| ------------- | ------------- | ----- |
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      | $12   |
+| zebra stripes | are neat      | $1    |
 
 ## Blockquotes
 
