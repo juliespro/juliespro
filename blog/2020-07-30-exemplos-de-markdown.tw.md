@@ -2,7 +2,7 @@
 title: 玉山前四峰
 description: 玉山主峰、北峰、西峰、前鋒
 date: '2019-07-15 08:30:23'
-image: /assets/img/jade.jpg
+image: /assets/img/dsc06339.jpg
 category: Others
 background: '#bdc3c7'
 ---
