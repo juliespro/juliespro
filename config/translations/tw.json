@@ -1,8 +1,8 @@
 {
   "home": "首頁",
 
-  "hello": "Hi,歡迎來到茱麗部落",
-  "subline": "在這裡，我記錄一些 R語言 、 SPSS 、 SAS 的學習筆記與一些登山的旅遊紀錄！ ",
+  "hello": "Hi,我是茱麗! 歡迎來到我的學習筆記！",
+  "subline": "在這裡，我記錄一些登山的旅遊紀錄、公共衛生的讀書心得與 R語言 、 SPSS 、 SAS 的學習筆記！",
   "latestPosts": "最新文章",
   "category": "標籤",
   "allPosts": "所有文章",  
@@ -14,8 +14,8 @@
 
   "button": "按鈕",
 
-  "aboutProject": "Iceberg Gatsby é um PWA, salve o site em sua homescreen para vê-lo offline.",
-  "seeMore": "Leia mais sobre PWA aqui",
+  "aboutProject": "茱麗的學習筆記 - 旅遊, 學術 與 程式統計! 想看更多",
+  "seeMore": "歡迎追蹤我的 Instagram!",
   "maintainedBy": "Copyright © 2018 - 2020 | 用 ❤️ 打造 - ",
   "contributeMessage": "本站同時收錄在"
 }

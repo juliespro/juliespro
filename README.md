@@ -26,6 +26,7 @@
 - [ ] En - About Page
 - [x] TW - contact correction
 - [ ] TW - About Page
+- [ ] TW - Footer for follow on instagram
 
 
 
