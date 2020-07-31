@@ -66,6 +66,12 @@ const GlobalStyles = createGlobalStyle`
       font-size: 1.7rem;
     `}
   }
+
+  // Need to solve quoate background color
+  pre {
+    background: #2d2d2d;
+  }
+
   img {
     display: block;
   	max-width: 100%;
