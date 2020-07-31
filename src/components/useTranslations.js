@@ -52,7 +52,7 @@ const query = graphql`
             button
 
             aboutProject
-            seeMorePWA
+            seeMore
             maintainedBy
             contributeMessage
           }

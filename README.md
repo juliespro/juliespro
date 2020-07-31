@@ -18,11 +18,14 @@
 ## 1.1. TODO Feature for this blog
 
 - [ ] Dark/ White Theme
-- [ ] English front page content
-- [ ] English translate
-- [ ] Footer for follow on instagram
-- [ ] Footer correction
-- [x] TW contact correction
+- [x] Social Link
+- [x] En - front page content
+- [x] En - translate
+- [x] En - Footer for follow on instagram
+- [x] En - Footer correction
+- [ ] En - About Page
+- [x] TW - contact correction
+- [ ] TW - About Page
 
 
 

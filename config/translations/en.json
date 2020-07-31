@@ -1,8 +1,8 @@
 { 
   "home": "Home",
 
-  "hello": "Gatsby multi-language starter",
-  "subline": "Internationalization / i18n without third party plugins or packages for Posts and Pages. Different URLs dependending on the language. Focused on SEO, PWA, Image Optimization, Styled Components and more. This starter is also integrate with Netlify CMS to manage all pages, posts and images.",
+  "hello": "Hi, I'm Julie! Welcome to Julie's Pro Blog",
+  "subline": "Here, I'll show you the amazing places I traveled around the world, some research readings about public health and SPSS, SAS and R language coding tips!",
   "latestPosts": "Latest posts",
   "category": "Category", 
   "allPosts": "All Posts",
@@ -14,8 +14,8 @@
 
   "button": "Button",
 
-  "aboutProject": "Iceberg Gatsby is a PWA, save it for offline reading.",
-  "seeMorePWA": "See more PWA here",
+  "aboutProject": "Julie's Pro Blog - Travel, Research and Statistics! To know more,",
+  "seeMore": "follow my Instagram!",
   "maintainedBy": "Copyright © 2018 - 2020 | Made with ❤️ by",
   "contributeMessage": "You can also find the site post on"
 }

@@ -7,7 +7,7 @@ import * as S from './styled';
 const Footer = () => {
   const {
     aboutProject,
-    seeMorePWA,
+    seeMore,
     maintainedBy,
     contributeMessage,
   } = useTranslations();
@@ -19,24 +19,24 @@ const Footer = () => {
         <p>
           {aboutProject}{' '}
           <a
-            href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps"
+            href="https://www.instagram.com/julies.pro"
             target="_blank"
           >
-            {seeMorePWA}
+            {seeMore}
           </a>
           .
         </p>
         <p>
           {maintainedBy}{' '}
           <a
-            href="https://twitter.com/_diogorodrigues"
+            href="https://www.instagram.com/julies.pro"
             target="_blank"
           >
-            @_diogorodrigues
+            @julies.pro
           </a>
           . {contributeMessage}{' '}
           <a
-            href="https://github.com/diogorodrigues/iceberg-gatsby-multilang"
+            href="https://github.com/juliespro/juliespro"
             target="_blank"
           >
             Github
