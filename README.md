@@ -23,10 +23,12 @@
 - [x] En - translate
 - [x] En - Footer for follow on instagram
 - [x] En - Footer correction
-- [ ] En - About Page
+- [x] En - About Page
+- [ ] En - Contact simple text
 - [x] TW - contact correction
-- [ ] TW - About Page
-- [ ] TW - Footer for follow on instagram
+- [x] TW - About Page
+- [x] TW - Footer for follow on instagram
+- [ ] TW - Contact simple text
 
 
 
