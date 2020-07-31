@@ -2,14 +2,29 @@
 
 <img src="./src/images/julie-icon.png" width="150">
 
-# Julie's Pro Blog - a blog about public health and travel!
+
+
+
+
+
+# 1. Julie's Pro Blog - a blog about public health and travel!
 
 [Take a look](https://juliespro.netlify.com)
 
  <!-- [Demo on Netlify](https://iceberg-gatsby-multilang.netlify.com/) -->
 
 
-## This blog is created by using iceberg gatsby template
+
+## 1.1. TODO Feature for this blog
+
+- [ ] Dark/ White Theme
+- [ ] English front page content
+- [ ] English translate
+- [ ] Footer correction
+
+
+
+## 1.2. This blog is created by using iceberg gatsby template
 
 [Starter on Gatsby](https://www.gatsbyjs.org/starters/diogorodrigues/iceberg-gatsby-multilang/) 
 
