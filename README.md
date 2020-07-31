@@ -21,6 +21,7 @@
 - [ ] English front page content
 - [ ] English translate
 - [ ] Footer correction
+- [x] TW contact correction
 
 
 
