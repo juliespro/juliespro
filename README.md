@@ -24,11 +24,11 @@
 - [x] En - Footer for follow on instagram
 - [x] En - Footer correction
 - [x] En - About Page
-- [ ] En - Contact simple text
+- [x] En - Contact simple text
 - [x] TW - contact correction
 - [x] TW - About Page
 - [x] TW - Footer for follow on instagram
-- [ ] TW - Contact simple text
+- [x] TW - Contact simple text
 
 
 
