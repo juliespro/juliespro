@@ -20,6 +20,7 @@
 - [ ] Dark/ White Theme
 - [ ] English front page content
 - [ ] English translate
+- [ ] Footer for follow on instagram
 - [ ] Footer correction
 - [x] TW contact correction
 
