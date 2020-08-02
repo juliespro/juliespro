@@ -12,8 +12,8 @@ import img from '../../../static/assets/img/cover.jpg'
 export const HeaderWrapper = styled.div`
   background: linear-gradient(
     to bottom,
-    rgba(0,0,0,0.2), 
-    transparent
+    rgba(0,0,0,0.4), 
+    rgba(0,0,0,0)
   );
   ${media.greaterThan('large')`
     margin-bottom: var(--space);

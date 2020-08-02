@@ -93,7 +93,7 @@ export const query = graphql`
             category
             background
             date(formatString: $dateFormat)
-            image
+            
           }
           timeToRead
           fields {

@@ -41,7 +41,7 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   height: 800px;
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  background-position: bottom center;
+  background-position: 45% 15% ;
   background-repeat: repeat-y;
   background-size: cover;
   z-index: -1;

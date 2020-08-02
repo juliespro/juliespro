@@ -4,7 +4,7 @@ date: 2020-07-27 16:42:23
 page: true
 ---
 
-<img src="../static//assets/img/mtJade/mt&me.jpg" width="150">
+<img src="../static/assets/img/mtJade/mt&me.jpg" width="150">
 
 ### 謝佩芸 ( Julie )
 

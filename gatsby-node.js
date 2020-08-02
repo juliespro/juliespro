@@ -48,7 +48,7 @@ exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions;
 
 
-  // fmImagesToRelative(node);
+  fmImagesToRelative(node);
 
   // Check for "MarkdownRemark" type so that other files (e.g. images) are exluded
   if (node.internal.type === `MarkdownRemark`) {
