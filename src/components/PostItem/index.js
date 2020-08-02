@@ -39,17 +39,12 @@ const PostItem = ({
   const postImgCover = listImages.edges.find(img => {
     return img.node.childImageSharp.fluid.src.includes('cover');
   });
-
+  console.log(image)
   const imgName = image ? image.split('/')[3] : false;
+  console.log(imgName)
 
-
-  //IDK why the there is null fluid
   const postImg = imgName
     ? listImages.edges.find(img => {
-        console.log(img.node.childImageSharp)
-        // if(img.node.childImageShape == null){
-        //   return false;
-        // }
         return img.node.childImageSharp ? img.node.childImageSharp.fluid.src.includes(imgName): false;
 
       })

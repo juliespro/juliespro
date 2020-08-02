@@ -6,11 +6,6 @@ module.exports = {
     siteUrl: `https://juliespro.netlify.app/`,
   },
   plugins: [
-    `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-styled-components`,
-    `gatsby-transformer-json`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     // It needs to be the first one to work with gatsby-remark-images
     {
       resolve: `gatsby-source-filesystem`,
@@ -61,6 +56,10 @@ module.exports = {
         name: `language-mapping`,
       },
     },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -83,6 +82,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {

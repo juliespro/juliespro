@@ -1,10 +1,12 @@
 const path = require(`path`);
+
 const locales = require(`./config/i18n`);
 const {
   localizedSlug,
   findKey,
   removeTrailingSlash,
 } = require(`./src/utils/gatsby-node-helpers`);
+const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions;
@@ -44,6 +46,9 @@ exports.onCreatePage = ({ page, actions }) => {
 // And the slug make sure the urls will be the same for all posts
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions;
+
+
+  // fmImagesToRelative(node);
 
   // Check for "MarkdownRemark" type so that other files (e.g. images) are exluded
   if (node.internal.type === `MarkdownRemark`) {

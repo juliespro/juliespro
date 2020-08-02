@@ -5,7 +5,7 @@ import PostItem from '../components/PostItem';
 import TitlePage from '../components/TitlePage';
 import LocalizedLink from '../components/LocalizedLink';
 import useTranslations from '../components/useTranslations';
-
+import StyledBackgroundSection from '../components/BackgroundSection'
 import * as S from '../components/ListWrapper/styled';
 
 const Index = ({ data: { allMarkdownRemark } }) => {
@@ -24,6 +24,7 @@ const Index = ({ data: { allMarkdownRemark } }) => {
   return (
     <div className="homepage">
       <SEO title="Home" />
+      <StyledBackgroundSection></StyledBackgroundSection>
       <TitlePage text={hello} />
       <p>{subline}</p>
       <hr style={{ margin: `2rem 0` }} />
@@ -73,6 +74,7 @@ const Index = ({ data: { allMarkdownRemark } }) => {
 
 export default Index;
 
+// image
 export const query = graphql`
   query Index($locale: String!, $dateFormat: String!, ) {
     allMarkdownRemark(
@@ -90,9 +92,8 @@ export const query = graphql`
             description
             category
             background
-            image
             date(formatString: $dateFormat)
-
+            image
           }
           timeToRead
           fields {

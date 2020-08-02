@@ -48,7 +48,7 @@ const Blog = props => {
               timeToRead={timeToRead}
               title={title}
               description={description}
-              image={image}
+              // image={image}
               key={slug}
             />
           ),
@@ -66,7 +66,7 @@ const Blog = props => {
     </>
   );
 };
-
+// image
 export const query = graphql`
   query PostsList($locale: String!, $dateFormat: String!, $skip: Int!, $limit: Int!) {
     allMarkdownRemark(
@@ -86,7 +86,7 @@ export const query = graphql`
             description
             category
             background
-            image
+            
             date(formatString: $dateFormat)
 
           }

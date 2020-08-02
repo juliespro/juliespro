@@ -1,9 +1,20 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
 import LocalizedLink from '../LocalizedLink';
+import img from '../../../static/assets/img/cover.jpg'
 
+// background-color: black;
+// background-image: url(${img});  
+// background-size: cover;
+// background-position: center 30%;
+// background-color: var(--bg-light);
+// background-color: none;
 export const HeaderWrapper = styled.div`
-  background-color: var(--bg-light);
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.2), 
+    transparent
+  );
   ${media.greaterThan('large')`
     margin-bottom: var(--space);
   `}

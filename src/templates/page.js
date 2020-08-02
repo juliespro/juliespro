@@ -9,12 +9,14 @@ const Page = props => {
   const post = props.data.markdownRemark;
 
   return (
+    
     <>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
-        image={post.frontmatter.image}
+        // image={post.frontmatter.image}
       />
+      
       <TitlePage text={post.frontmatter.title} />
       <S.Content>
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
@@ -22,7 +24,7 @@ const Page = props => {
     </>
   );
 };
-
+// image
 export const query = graphql`
   query Page($locale: String!, $title: String!) {
     markdownRemark(
@@ -32,7 +34,7 @@ export const query = graphql`
       frontmatter {
         title
         description
-        image
+        
       }
       html
     }

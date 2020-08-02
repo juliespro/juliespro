@@ -80,9 +80,10 @@ const GlobalStyles = createGlobalStyle`
 
   a {
     color: var(--primaryColor)
-  }
+  }background-position: center bottom;
 
   :root { 
+    --light: #fff;
     --gray-extra-light: #eaeaea; 
     --gray-light: #747d8d;  
     --gray: #475060;
@@ -104,7 +105,7 @@ const GlobalStyles = createGlobalStyle`
     --link-color-hover: var(--thirdy-color);
 
     --text-color: var(--gray);
-    --text-light:var(--gray-light);
+    --text-light:var(--light);
     --text-dark: var(--gray-dark);
 
     --width-container: 1040px;
