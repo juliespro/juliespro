@@ -32,9 +32,11 @@
 - [x] TW - About Page
 - [x] TW - Footer for follow on instagram
 - [x] TW - Contact simple text
-- [ ] Logic Post when into SinglePost close side menu automatically
+- [ ] Logic Post when into SinglePost close side menu automatically -> Need React Hook
 - [ ] Auto Next Post at the end of the post
 - [x] Side menu button white
+- [ ] Next post & Previus post
+- [ ] 
 
 
 
