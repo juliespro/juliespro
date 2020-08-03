@@ -2,7 +2,7 @@ import React from 'react';
 import BackgroundImage from 'gatsby-background-image'
 import styled from 'styled-components'
 
-export const Hero = ({fluid, className}) => (
+const Hero = ({fluid, className}) => (
     <BackgroundImage
         Tag="section"
         className={className}
@@ -14,9 +14,9 @@ export const Hero = ({fluid, className}) => (
 
 
 const StyledHero = styled(Hero)`
-  margin-top: -400px;
+  margin-top: -450px;
   margin-bottom: 40px;
-  height: calc(5vh + 400px);
+  height: ${props => props.height ? 'calc(4vh + '+props.height+'px)' : 'calc(4vh + 420px)'}; ;
   width: 100vw;
   margin-left: calc(50% - 50vw);
   background-position: center;

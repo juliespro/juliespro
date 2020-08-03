@@ -19,7 +19,7 @@ const Post = props => {
         image={post.frontmatter.image.childImageSharp.fluid.src}
       />
       {/* <StyledBackgroundSection image={post.frontmatter.image}></StyledBackgroundSection> */}
-      <Hero fluid={post.frontmatter.image.childImageSharp.fluid}></Hero>
+      <Hero fluid={post.frontmatter.image.childImageSharp.fluid} height={620}></Hero>
       {/* <h1>{post.frontmatter.image}</h1> */}
       <TitlePage text={post.frontmatter.title} />
       <S.Content>

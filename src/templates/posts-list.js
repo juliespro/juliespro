@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import PostItem from '../components/PostItem';
 import TitlePage from '../components/TitlePage';
 import SEO from '../components/seo';
-
+import Hero from "../components/Hero";
 import Pagination from '../components/Pagination';
 
 import * as S from '../components/ListWrapper/styled';
@@ -18,10 +18,12 @@ const Blog = props => {
   const prevPage =
     currentPage - 1 === 1 ? '/blog' : `/blog/${currentPage - 1}`;
   const nextPage = `/blog/page/${currentPage + 1}`;
-
+  const heroFluid = props.data.fileName.childImageSharp.fluid
+  
   return (
     <>
       <SEO title="Blog" />
+      <Hero fluid={heroFluid}></Hero>
       <TitlePage text="Blog" />
 
       <S.ListWrapper>
@@ -103,6 +105,13 @@ export const query = graphql`
             locale
             slug
           }
+        }
+      }
+    }
+    fileName: file(relativePath: { eq: "blog.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

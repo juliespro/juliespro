@@ -2,6 +2,7 @@
 title: '關於我'
 date: 2020-07-27 16:42:23
 page: true
+image: /assets/img/about.jpg
 ---
 
 <img src="../static/assets/img/mtJade/mt&me.jpg" width="150">

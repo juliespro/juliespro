@@ -31,6 +31,9 @@
 - [x] TW - About Page
 - [x] TW - Footer for follow on instagram
 - [x] TW - Contact simple text
+- [ ] Logic Post when into SinglePost close side menu automatically
+- [ ] Auto Next Post at the end of the post
+- [ ] Side menu button white
 
 
 

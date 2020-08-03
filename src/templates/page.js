@@ -2,12 +2,13 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import TitlePage from '../components/TitlePage';
 import SEO from '../components/seo';
+import Hero from '../components/Hero'
 
 import * as S from '../components/Content/styled';
 
 const Page = props => {
   const post = props.data.markdownRemark;
-
+  const fluid = post.frontmatter.image.childImageSharp.fluid;
   return (
     
     <>
@@ -16,7 +17,9 @@ const Page = props => {
         description={post.frontmatter.description}
         // image={post.frontmatter.image}
       />
-      
+      {fluid && (
+        <Hero fluid={fluid}></Hero>
+      )}
       <TitlePage text={post.frontmatter.title} />
       <S.Content>
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
@@ -34,7 +37,14 @@ export const query = graphql`
       frontmatter {
         title
         description
-        
+        image {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              src
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
       html
     }

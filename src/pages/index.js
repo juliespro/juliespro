@@ -6,9 +6,10 @@ import TitlePage from '../components/TitlePage';
 import LocalizedLink from '../components/LocalizedLink';
 import useTranslations from '../components/useTranslations';
 import StyledBackgroundSection from '../components/BackgroundSection'
+import Hero from '../components/Hero'
 import * as S from '../components/ListWrapper/styled';
 
-const Index = ({ data: { allMarkdownRemark } }) => {
+const Index = ({ data: { allMarkdownRemark,fileName } }) => {
   // useTranslations is aware of the global context (and therefore also "locale")
   // so it'll automatically give back the right translations
   const {
@@ -20,11 +21,12 @@ const Index = ({ data: { allMarkdownRemark } }) => {
   } = useTranslations();
 
   const postList = allMarkdownRemark.edges;
-
+  const heroFluid = fileName.childImageSharp.fluid
   return (
     <div className="homepage">
       <SEO title="Home" />
-      <StyledBackgroundSection></StyledBackgroundSection>
+      {/* <StyledBackgroundSection></StyledBackgroundSection> */}
+      <Hero fluid={heroFluid}></Hero>
       <TitlePage text={hello} />
       <p>{subline}</p>
       <hr style={{ margin: `2rem 0` }} />
@@ -52,6 +54,7 @@ const Index = ({ data: { allMarkdownRemark } }) => {
           }) => {
             // console.log(image.childImageSharp.fluid)
             const fluid = image.childImageSharp.fluid
+            
             return(
               <PostItem
                 slug={`/blog/${slug}`}
@@ -109,6 +112,13 @@ export const query = graphql`
             locale
             slug
           }
+        }
+      }
+    }
+    fileName: file(relativePath: { eq: "cover.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
