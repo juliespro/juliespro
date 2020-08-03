@@ -20,6 +20,7 @@
 ## 1.1. TODO Feature for this blog
 
 - [ ] Dark/ White Theme
+- [x] Cover Photo Hero Header
 - [x] Social Link
 - [x] En - front page content
 - [x] En - translate
@@ -33,7 +34,7 @@
 - [x] TW - Contact simple text
 - [ ] Logic Post when into SinglePost close side menu automatically
 - [ ] Auto Next Post at the end of the post
-- [ ] Side menu button white
+- [x] Side menu button white
 
 
 

@@ -33,7 +33,7 @@ export const ButtonHamburger = styled.button`
   }
 
   span {
-    background: var(--secondary-color);
+    background: var(--light);
     border-radius: 10px;
     display: inline-block;
     height: 3px;
@@ -46,7 +46,7 @@ export const ButtonHamburger = styled.button`
     &:before,
     &:after {
       content: '';
-      background: var(--secondary-color);
+      background: var(--light);
       border-radius: 10px;
       display: inline-block;
       height: 3px;
