@@ -10,14 +10,14 @@ import * as S from '../components/Content/styled';
 
 const Post = props => {
   const post = props.data.markdownRemark;
-
+  // console.log(post.frontmatter.image.childImageSharp.fluid.src);
   return (
     <>
-      {/* <SEO
+      <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
-        image={post.frontmatter.image}
-      /> */}
+        image={post.frontmatter.image.childImageSharp.fluid.src}
+      />
       {/* <StyledBackgroundSection image={post.frontmatter.image}></StyledBackgroundSection> */}
       <Hero fluid={post.frontmatter.image.childImageSharp.fluid}></Hero>
       {/* <h1>{post.frontmatter.image}</h1> */}
@@ -41,6 +41,7 @@ export const query = graphql`
         image {
           childImageSharp {
             fluid(maxWidth: 800) {
+              src
               ...GatsbyImageSharpFluid
             }
           }
