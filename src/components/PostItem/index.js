@@ -39,29 +39,30 @@ const PostItem = ({
   const postImgCover = listImages.edges.find(img => {
     return img.node.childImageSharp.fluid.src.includes('cover');
   });
-  console.log(image)
-  const imgName = image ? image.split('/')[3] : false;
-  console.log(imgName)
+  // console.log(image)
+  // const imgName = image ? image.split('/')[3] : false;
+  // console.log(imgName)
 
-  const postImg = imgName
-    ? listImages.edges.find(img => {
-        return img.node.childImageSharp ? img.node.childImageSharp.fluid.src.includes(imgName): false;
+  // const postImg = imgName
+  //   ? listImages.edges.find(img => {
+  //       return img.node.childImageSharp ? img.node.childImageSharp.fluid.src.includes(imgName): false;
 
-      })
-    : false;
-
+  //     })
+  //   : false;
+  const postImg = image? image: false
+// .node.childImageSharp.fluid}
   return (
     <S.PostItemLink to={slug}>
       <S.PostItemWrapper>
         {postImg && (
           <S.PostItemImg
-            fluid={postImg.node.childImageSharp.fluid}
+            fluid={postImg}
             alt={title}
           />
         )}
         {!postImg && (
           <S.PostItemImg
-            fluid={postImgCover.node.childImageSharp.fluid}
+            fluid={postImgCover}
             alt={title}
           />
         )}

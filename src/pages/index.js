@@ -49,7 +49,10 @@ const Index = ({ data: { allMarkdownRemark } }) => {
               timeToRead,
               fields: { slug },
             },
-          }) => (
+          }) => {
+            // console.log(image.childImageSharp.fluid)
+            const fluid = image.childImageSharp.fluid
+            return(
               <PostItem
                 slug={`/blog/${slug}`}
                 background={background}
@@ -58,10 +61,10 @@ const Index = ({ data: { allMarkdownRemark } }) => {
                 timeToRead={timeToRead}
                 title={title}
                 description={description}
-                image={image}
+                image={fluid}
                 key={slug}
               />
-            ),
+            )},
         )}
       </S.ListWrapper>
 
@@ -93,7 +96,13 @@ export const query = graphql`
             category
             background
             date(formatString: $dateFormat)
-            
+            image {
+              childImageSharp {
+                fluid(maxWidth: 600, maxHeight: 350) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
           timeToRead
           fields {

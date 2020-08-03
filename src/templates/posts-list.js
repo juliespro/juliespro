@@ -39,7 +39,9 @@ const Blog = props => {
               timeToRead,
               fields: { slug },
             },
-          }) => (
+          }) => {
+            const fluid = image.childImageSharp.fluid
+            return (
             <PostItem
               slug={`/blog/${slug}`}
               background={background}
@@ -48,10 +50,10 @@ const Blog = props => {
               timeToRead={timeToRead}
               title={title}
               description={description}
-              // image={image}
+              image={fluid}
               key={slug}
             />
-          ),
+          )},
         )}
       </S.ListWrapper>
 
@@ -86,7 +88,13 @@ export const query = graphql`
             description
             category
             background
-            
+            image {
+              childImageSharp {
+                fluid(maxWidth: 600, maxHeight: 350) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             date(formatString: $dateFormat)
 
           }
