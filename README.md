@@ -36,7 +36,7 @@
 - [ ] Auto Next Post at the end of the post
 - [x] Side menu button white
 - [ ] Next post & Previus post
-- [ ] 
+- [x] Sitemap Config Name fix
 
 
 

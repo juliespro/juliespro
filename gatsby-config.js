@@ -100,8 +100,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby multiple language`,
-        short_name: `Gatsby multiple language`,
+        name: `Julie's Pro Blog`,
+        short_name: `Julie's Pro Blog`,
         start_url: `/`,
         background_color: `#16202c`,
         theme_color: `#16202c`,
