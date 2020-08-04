@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `茱麗部落`,
-    description: `有關茱麗的學術～旅遊～記趣～`,
-    author: `@txs`,
-    siteUrl: `https://juliespro.netlify.app/`,
+    title: `茱莉部落`,
+    description: `有關茱莉的學術～旅遊～記趣～`,
+    author: `@juliespro`,
+    siteUrl: `https://julies.pro`,
   },
   plugins: [
     // It needs to be the first one to work with gatsby-remark-images
