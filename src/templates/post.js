@@ -3,14 +3,19 @@ import { graphql } from 'gatsby';
 import TitlePage from '../components/TitlePage';
 import SEO from '../components/seo';
 import StyledBackgroundSection from '../components/BackgroundSection'
-// import Img from "gatsby-image"
+import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 import Hero from '../components/Hero'
 
 import * as S from '../components/Content/styled';
 
 const Post = props => {
   const post = props.data.markdownRemark;
-  // console.log(post.frontmatter.image.childImageSharp.fluid.src);
+  let disqusConfig = {
+  //   url: `${config.siteUrl+location.pathname}`,
+    identifier: post.id,
+    title: post.frontmatter.title,
+    category_id: post.frontmatter.category
+  }
   return (
     <>
       <SEO
@@ -25,6 +30,8 @@ const Post = props => {
       <S.Content>
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
       </S.Content>
+      <CommentCount config={disqusConfig} placeholder={'...'} />
+      <Disqus config={disqusConfig} />
     </>
   );
 };
@@ -35,9 +42,11 @@ export const query = graphql`
       frontmatter: { title: { eq: $title } }
       fields: { locale: { eq: $locale } }
     ) {
+      id
       frontmatter {
         title
         description
+        category
         image {
           childImageSharp {
             fluid(maxWidth: 800) {
