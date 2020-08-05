@@ -10,11 +10,13 @@ import * as S from '../components/Content/styled';
 
 const Post = props => {
   const post = props.data.markdownRemark;
+  // const language = post.fields.locale=='tw'?'zh':post.fields.locale
+
   let disqusConfig = {
   //   url: `${config.siteUrl+location.pathname}`,
     identifier: post.id,
     title: post.frontmatter.title,
-    category_id: post.frontmatter.category
+    // language: language
   }
   return (
     <>
@@ -46,7 +48,6 @@ export const query = graphql`
       frontmatter {
         title
         description
-        category
         image {
           childImageSharp {
             fluid(maxWidth: 800) {
