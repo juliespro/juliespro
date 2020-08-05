@@ -77,6 +77,7 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
+          `gatsby-remark-autolink-headers`,
           `gatsby-remark-lazy-load`,
           `gatsby-remark-prismjs`, // It needs to be the last one
         ],
