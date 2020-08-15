@@ -97,6 +97,7 @@ module.exports = {
     },
 
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-lodash`,
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,

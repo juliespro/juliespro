@@ -5,13 +5,19 @@ import SEO from '../components/seo';
 import StyledBackgroundSection from '../components/BackgroundSection'
 import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 import Hero from '../components/Hero'
+import Toc from '../components/Toc'
 
 import * as S from '../components/Content/styled';
 
 const Post = props => {
   const post = props.data.markdownRemark;
   // const language = post.fields.locale=='tw'?'zh':post.fields.locale
-
+  const image = post.frontmatter.image
+  // const fluid = image && image.childImageSharp ? image.childImageSharp.fluid : image
+  const fluid = image.childImageSharp.fluid
+  // const imageSrc = fluid && fluid.src ? fluid.src : image 
+  const imageSrc = fluid.src
+  const showToc = post.frontmatter.showToc
   let disqusConfig = {
   //   url: `${config.siteUrl+location.pathname}`,
     identifier: post.id,
@@ -23,15 +29,19 @@ const Post = props => {
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
-        image={post.frontmatter.image.childImageSharp.fluid.src}
+        image={imageSrc}
       />
       {/* <StyledBackgroundSection image={post.frontmatter.image}></StyledBackgroundSection> */}
-      <Hero fluid={post.frontmatter.image.childImageSharp.fluid} height={620}></Hero>
+      <Hero fluid={fluid} height={620}></Hero>
       {/* <h1>{post.frontmatter.image}</h1> */}
       <TitlePage text={post.frontmatter.title} />
-      <S.Content>
-        <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
-      </S.Content>
+      <S.Sidebar>
+        {showToc && <Toc />}  
+        <S.Content>
+          {/* <div style={{display: 'inline-block', width:'calc( 100% - 20em )', verticalAlign: 'top'}} dangerouslySetInnerHTML={{ __html: post.html }}></div> */}
+          <S.Html dangerouslySetInnerHTML={{ __html: post.html }}></S.Html>
+        </S.Content>
+      </S.Sidebar>
       <CommentCount config={disqusConfig} placeholder={'...'} />
       <Disqus config={disqusConfig} />
     </>
@@ -48,6 +58,7 @@ export const query = graphql`
       frontmatter {
         title
         description
+        showToc
         image {
           childImageSharp {
             fluid(maxWidth: 800) {

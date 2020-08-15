@@ -1,7 +1,8 @@
 import React from 'react';
 
-import { Instagram } from 'styled-icons/boxicons-logos/Instagram';
-import { Github } from 'styled-icons/boxicons-logos/Github';
+// import { Instagram } from 'styled-icons/boxicons-logos/Instagram';
+// import { Github } from 'styled-icons/boxicons-logos/Github';
+import {Instagram, Github} from '@styled-icons/boxicons-logos'
 
 import * as S from './styled';
 

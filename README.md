@@ -37,6 +37,7 @@
 - [x] Side menu button white
 - [ ] Next post & Previus post
 - [x] Sitemap Config Name fix
+- [x] Add Autolink Headers 08/05
 
 
 

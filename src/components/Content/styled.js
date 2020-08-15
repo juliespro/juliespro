@@ -1,9 +1,29 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
+import mediaQuery from '../../utils/mediaQuery'
+
+export const Html = styled.div`
+  
+`
+
+export const Sidebar = styled.div`
+  ${mediaQuery.minDesktop} {
+    // margin-left: -16.5em;
+    margin-left: -28%;
+    // width: calc( 100% + 26em );
+    width: calc( 128% );
+  }
+`
 
 export const Content = styled.section`
   margin: auto;
   padding: var(--space-lg) 0;
+  
+  ${mediaQuery.minDesktop} {  
+    display: inline-block;
+    width: 78%;
+    vertical-align: top;
+  }
 
   & > *:first-child {
     margin-top: 0 !important;

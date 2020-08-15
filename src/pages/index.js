@@ -53,7 +53,7 @@ const Index = ({ data: { allMarkdownRemark,fileName } }) => {
             },
           }) => {
             // console.log(image.childImageSharp.fluid)
-            const fluid = image.childImageSharp.fluid
+            const fluid = image && image.childImageSharp ? image.childImageSharp.fluid : image
             
             return(
               <PostItem

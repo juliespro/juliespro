@@ -5,6 +5,7 @@ description: Veja como é super fácil adicionar novos posts e páginas neste pr
 category: Gatsby
 background: '#7d4cdb'
 image: '/assets/img/06.jpg'
+showToc: false
 ---
 
 ## Adicionando um novo conteúdo

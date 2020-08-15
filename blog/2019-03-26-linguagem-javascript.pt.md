@@ -5,6 +5,7 @@ description: JavaScript, frequentemente abreviado como JS, é uma linguagem de s
 category: Javascript
 background: '#e58e26'
 image: '/assets/img/05.jpg'
+showToc: false
 ---
 
 JavaScript (/ ˈdʒɑːvəˌskrɪpt /), geralmente abreviado como JS, é uma linguagem de script interpretada de alto nível que está em conformidade com a especificação ECMAScript. O JavaScript possui sintaxe entre colchetes, digitação dinâmica, orientação a objetos com base em protótipo e funções de primeira classe.
