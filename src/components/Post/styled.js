@@ -44,6 +44,7 @@ export const MainContent = styled.section`
   p {
     margin: 1rem 0;
   }
+
   h1,
   h2,
   h3,

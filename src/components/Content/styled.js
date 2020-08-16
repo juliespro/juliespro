@@ -84,13 +84,17 @@ export const Content = styled.section`
     }
 
     &:hover a.anchor {
-      text-decoration: none;
+      text-decoration: none; 
     }
 
     tt,
     code {
       font-size: inherit;
     }
+  }
+
+  a.anchor {
+    margin-left: 0em;
   }
 
   h1:first-child + h2 {
