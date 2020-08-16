@@ -31,20 +31,21 @@
 - [x] TW - About Page
 - [x] TW - Footer for follow on instagram
 - [x] TW - Contact simple text
-- [ ] Logic Post when into SinglePost close side menu automatically -> Need React Hook
-- [ ] Auto Next Post at the end of the post
 - [x] Side menu button white
-- [ ] Next post & Previus post
 - [x] Sitemap Config Name fix
 - [x] Add Autolink Headers 08/05
-- [ ] /blog click translate button wrong url page
 - [x] Fix post without sidebar 08/16
 - [x] Make TOC sidebar title i18n ready 08/16
 - [x] Make Comment title i18n ready 08/16
 - [x] Fix Chinese CommentTitle no show after refresh 08/16
+- [ ] Logic Post when into SinglePost close side menu automatically -> Need React Hook
+- [ ] Auto Next Post at the end of the post
+- [ ] Next post & Previus post
+- [ ] /blog click translate button wrong url page
+- [ ] Post Title url change without update browser history
 
 * Dev
-- [x] Dark/ White Theme
+- [x] Dark/ White Theme 08/17 04:00
 
 
 
