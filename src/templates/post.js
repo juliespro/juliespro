@@ -1,11 +1,13 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import TitlePage from '../components/TitlePage';
 import SEO from '../components/seo';
 import StyledBackgroundSection from '../components/BackgroundSection'
 import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 import Hero from '../components/Hero'
 import Toc from '../components/Toc'
+
+import styled from 'styled-components';
 
 import * as S from '../components/Content/styled';
 
@@ -42,7 +44,8 @@ const Post = props => {
           <S.Html dangerouslySetInnerHTML={{ __html: post.html }}></S.Html>
         </S.Content>
       </S.Sidebar>
-      <CommentCount config={disqusConfig} placeholder={'...'} />
+      {/* <CommentCount config={disqusConfig} placeholder={'...'} /> */}
+      <h1><S.Comment />討論區</h1>
       <Disqus config={disqusConfig} />
     </>
   );

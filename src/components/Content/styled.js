@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
 import mediaQuery from '../../utils/mediaQuery'
+import {CommentDiscussion} from '@styled-icons/octicons'
+
 
 export const Html = styled.div`
   
@@ -13,6 +15,12 @@ export const Sidebar = styled.div`
     // width: calc( 100% + 26em );
     width: calc( 128% );
   }
+`
+
+export const Comment = styled(CommentDiscussion)`
+  margin-top: -0.5em;
+  padding-right: 0.3em;
+  width: 1.5em;
 `
 
 export const Content = styled.section`
