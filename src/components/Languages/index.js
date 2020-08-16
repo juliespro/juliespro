@@ -36,8 +36,8 @@ const Languages = () => {
     if (!associatedUrls) return navigate("/");
 
     return lang === "en" ?
-      navigate(`/${associatedUrls[lang]}`) :
-      navigate(`/${lang}/${associatedUrls[lang]}`);
+      navigate(`${associatedUrls[lang]}`) : // remove slash between variable since one appear to be more
+      navigate(`/${lang}${associatedUrls[lang]}`); // remove slash between variable since one appear to be more
   }
 
   return (
