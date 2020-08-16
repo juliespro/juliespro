@@ -40,6 +40,7 @@
 - [x] Add Autolink Headers 08/05
 - [ ] Make TOC sidebar title i18n ready 08/16
 - [ ] Make Comment title i18n ready
+- [ ] Fix post without sidebar
 
 
 

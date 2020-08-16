@@ -6,6 +6,7 @@ import StyledBackgroundSection from '../components/BackgroundSection'
 import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 import Hero from '../components/Hero'
 import Toc from '../components/Toc'
+import TocSpace from '../components/TocSpace'
 
 import styled from 'styled-components';
 
@@ -38,7 +39,8 @@ const Post = props => {
       {/* <h1>{post.frontmatter.image}</h1> */}
       <TitlePage text={post.frontmatter.title} />
       <S.Sidebar>
-        {showToc && <Toc />}  
+        {showToc  && <Toc />}
+        {!showToc && <TocSpace />}
         <S.Content>
           {/* <div style={{display: 'inline-block', width:'calc( 100% - 20em )', verticalAlign: 'top'}} dangerouslySetInnerHTML={{ __html: post.html }}></div> */}
           <S.Html dangerouslySetInnerHTML={{ __html: post.html }}></S.Html>
