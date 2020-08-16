@@ -7,6 +7,7 @@ import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 import Hero from '../components/Hero'
 import Toc from '../components/Toc'
 import TocSpace from '../components/TocSpace'
+import useTranslations from '../components/useTranslations';
 
 import styled from 'styled-components';
 
@@ -21,6 +22,7 @@ const Post = props => {
   // const imageSrc = fluid && fluid.src ? fluid.src : image 
   const imageSrc = fluid.src
   const showToc = post.frontmatter.showToc
+  const { comment } = useTranslations();
   let disqusConfig = {
   //   url: `${config.siteUrl+location.pathname}`,
     identifier: post.id,
@@ -44,10 +46,14 @@ const Post = props => {
         <S.Content>
           {/* <div style={{display: 'inline-block', width:'calc( 100% - 20em )', verticalAlign: 'top'}} dangerouslySetInnerHTML={{ __html: post.html }}></div> */}
           <S.Html dangerouslySetInnerHTML={{ __html: post.html }}></S.Html>
+          
         </S.Content>
+        
       </S.Sidebar>
       {/* <CommentCount config={disqusConfig} placeholder={'...'} /> */}
-      <h1><S.Comment />討論區</h1>
+      <h1 id='comment'>
+        <S.Comment />{comment}
+      </h1>
       <Disqus config={disqusConfig} />
     </>
   );

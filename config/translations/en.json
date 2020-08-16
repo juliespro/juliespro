@@ -1,6 +1,7 @@
 { 
   "home": "Home",
-
+  "comment": "Comment",
+  "tocTitle": "Contents",
   "hello": "Hi, I'm Julie! Welcome to Julie's Pro Blog",
   "subline": "Here, I'll show you the amazing places I traveled around the world, some research readings about public health and SPSS, SAS and R language coding tips!",
   "latestPosts": "Latest posts",

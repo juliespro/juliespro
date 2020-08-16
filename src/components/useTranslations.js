@@ -37,7 +37,8 @@ const query = graphql`
           name
           translations: childTranslationsJson {
             home
-
+            comment
+            tocTitle
             hello
             subline
             latestPosts

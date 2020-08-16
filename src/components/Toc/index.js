@@ -2,6 +2,7 @@ import { throttle } from 'lodash'
 import React, { useEffect, useRef, useState } from 'react'
 import { useEventListener, useOnClickOutside } from '../../hooks'
 import { Title, TocDiv, TocIcon, TocLink, TocToggle } from './styled'
+import useTranslations from '../useTranslations';
 
 const accumulateOffsetTop = (el, totalOffset = 0) => {
   while (el) {
@@ -12,7 +13,10 @@ const accumulateOffsetTop = (el, totalOffset = 0) => {
 }
 
 export default function Toc({ headingSelector, getTitle, getDepth, ...rest }) {
-  const { throttleTime = 200, tocTitle = `Contents` } = rest
+  const { throttleTime = 200
+    // , tocTitle = `Contents` 
+  } = rest
+  const { tocTitle, comment } = useTranslations();
   const [headings, setHeadings] = useState({
     titles: [],
     nodes: [],
@@ -50,7 +54,7 @@ export default function Toc({ headingSelector, getTitle, getDepth, ...rest }) {
       // +696+450-420-0.04*window.innerHeight
     )
     if(!!nodes && !!nodes[activeIndex-1]){
-      console.log(nodes[activeIndex-1])
+      // console.log(nodes[activeIndex-1])
       // window.location.hash = '#'+nodes[activeIndex-1].id
     }
     setActive(activeIndex === -1 ? titles.length - 1 : activeIndex - 1)
@@ -67,7 +71,10 @@ export default function Toc({ headingSelector, getTitle, getDepth, ...rest }) {
           <TocToggle onClick={() => setOpen(false)} />
         </Title>
         <nav>
-          {headings.titles.map(({ title, depth }, index) => (
+          {headings.titles.map(({ title, depth }, index) => {
+            console.log(title);
+            title = title == 'Comment' ? comment: title;
+            return (
             <TocLink
               key={title}
               active={active === index}
@@ -83,7 +90,8 @@ export default function Toc({ headingSelector, getTitle, getDepth, ...rest }) {
             >
               {title}
             </TocLink>
-          ))}
+          )}
+          )}
         </nav>
       </TocDiv>
     </>
