@@ -59,6 +59,7 @@ collections:
                         { label: 'Silver', value: '#bdc3c7' },
                     ],
             }
+          - { label: "TocSidebar", name: "showToc", widget: "boolean", default: true}
           - { label: 'Body', name: 'body', widget: 'markdown' }
 
     #Posts (Traditional Chinese)
@@ -108,6 +109,7 @@ collections:
                         { label: 'Silver', value: '#bdc3c7' },
                     ],
             }
+          - { label: "TocSidebar", name: "showToc", widget: "boolean", default: true}
           - { label: 'Body', name: 'body', widget: 'markdown' }
 
     #Pages (English)
