@@ -17,7 +17,7 @@ const BaseLayout = ({ children, pageContext: { locale } }) => {
 
   return (
     <>
-      <GlobalStyles />
+      {/* <GlobalStyles /> */}
       <S.Wrapper>
         <Header />
         <S.SiteContent role="main">

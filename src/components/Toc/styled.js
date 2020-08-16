@@ -4,7 +4,7 @@ import { Close as Cross } from 'styled-icons/material'
 import mediaQuery from '../../utils/mediaQuery'
 
 export const TocDiv = styled.aside`
-  background: var(--body-bg);
+  background: var(--color-background);
   padding: 0.7em 1.2em;
   margin: 1em 0;
   margin-right: 2%;
@@ -59,7 +59,7 @@ export const Title = styled.h2`
 
 export const TocLink = styled.a`
   cursor: pointer;
-  color: ${p => (p.active ? `var(--color-c)` : `var(--text-color)`)};
+  color: ${p => (p.active ? `var(--color-c)` : `var(--color-text)`)};
   font-weight: ${props => props.active && `bold`};
   display: block;
   margin-left: ${props => props.depth + `em`};
@@ -78,8 +78,8 @@ const openerCss = css`
   }
   left: 2em;
   padding: 0.5em 0.6em 0.5em 0.6em;
-  background: var(--body-bg);
-  border: 2px solid var(--text-color);
+  background: var(--color-background);
+  border: 2px solid var(--color-text);
   border-radius: 50% 50% 50% 50%;
   transform: translate(${props => (props.open ? `-100%` : 0)});
 `

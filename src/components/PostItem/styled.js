@@ -18,7 +18,7 @@ export const PostItemWrapper = styled.section`
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background: var(--bg-light);
+  background: var(--color-lightGray);
 
   /* .homepage & {
     flex-direction: row;
@@ -38,6 +38,7 @@ export const PostItemInfo = styled.div`
   flex-direction: column;
   padding: calc(var(--space) * 1.5) var(--space);
   position: relative;
+  
 `;
 
 export const PostItemTag = styled.span`

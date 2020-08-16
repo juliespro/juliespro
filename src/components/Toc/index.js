@@ -72,7 +72,7 @@ export default function Toc({ headingSelector, getTitle, getDepth, ...rest }) {
         </Title>
         <nav>
           {headings.titles.map(({ title, depth }, index) => {
-            console.log(title);
+            // if get title 'Comment' use translation one 
             title = title == 'Comment' ? comment: title;
             return (
             <TocLink

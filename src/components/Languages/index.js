@@ -2,6 +2,7 @@ import React from 'react';
 import { navigate } from "gatsby";
 import { useLocale } from '../../hooks/locale';
 import useLanguageMapping from '../useLanguageMapping';
+import DarkToggle from '../DarkToggle'
 
 import * as S from './styled';
 
@@ -41,6 +42,7 @@ const Languages = () => {
 
   return (
     <S.LanguageWrapper>
+      <DarkToggle/>
       <S.LanguageItem>
         <S.LanguageLink 
           to="/" 

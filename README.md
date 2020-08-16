@@ -19,7 +19,6 @@
 
 ## 1.1. TODO Feature for this blog
 
-- [ ] Dark/ White Theme
 - [x] Cover Photo Hero Header
 - [x] Social Link
 - [x] En - front page content
@@ -38,11 +37,14 @@
 - [ ] Next post & Previus post
 - [x] Sitemap Config Name fix
 - [x] Add Autolink Headers 08/05
-- [ ] Make TOC sidebar title i18n ready 08/16
-- [ ] Make Comment title i18n ready
+- [ ] /blog click translate button wrong url page
+- [x] Fix post without sidebar 08/16
+- [x] Make TOC sidebar title i18n ready 08/16
+- [x] Make Comment title i18n ready 08/16
+- [x] Fix Chinese CommentTitle no show after refresh 08/16
 
 * Dev
-- [x] Fix post without sidebar
+- [x] Dark/ White Theme
 
 
 
