@@ -36,13 +36,13 @@ collections:
                 widget: 'select',
                 options:
                     [
-                        'Markdown',
-                        'Javascript',
-                        'Images',
-                        'Gatsby',
-                        'Imagens',
-                        'Others',
-                        'Outros',
+                        'Hiking',
+                        'Travel',
+                        'Note',
+                        'CodingTip',
+                        'Tutorial',
+                        'Food',
+                        'Life',
                     ],
             }
           - {
@@ -86,13 +86,13 @@ collections:
                 widget: 'select',
                 options:
                     [
-                        'Markdown',
-                        'Javascript',
-                        'Images',
-                        'Gatsby',
-                        'Imagens',
-                        'Others',
-                        'Outros',
+                        '登山健行',
+                        '出國旅遊',
+                        '學習筆記',
+                        '程式攻略',
+                        '教學文章',
+                        '美食地圖',
+                        '生活隨筆',
                     ],
             }
           - {

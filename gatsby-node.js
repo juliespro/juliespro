@@ -1,5 +1,5 @@
 const path = require(`path`);
-
+const _ = require("lodash")
 const locales = require(`./config/i18n`);
 const {
   localizedSlug,
@@ -94,6 +94,7 @@ exports.createPages = async ({ graphql, actions }) => {
     `./src/templates/posts-list.js`,
   );
   const pageTemplate = path.resolve(`./src/templates/page.js`);
+  const categoriesTemplate = path.resolve(`./src/templates/category.js`);
 
   const result = await graphql(`
     {
@@ -110,6 +111,7 @@ exports.createPages = async ({ graphql, actions }) => {
             frontmatter {
               title
               page
+              category
             }
           }
         }
@@ -128,13 +130,19 @@ exports.createPages = async ({ graphql, actions }) => {
   // Total of posts (only posts, no pages)
   // It will be increase by the next loop
   let postsTotal = 0;
+  // Total categories count for creating categories page later
+  let categories = {}
 
   // Creating each post
-  contentMarkdown.forEach(({ node: file }) => {
+  contentMarkdown.forEach(({ node: file }, index) => {
     // Getting Slug and Title
     const slug = file.fields.slug;
     const title = file.frontmatter.title;
+    const category = file.frontmatter.category
 
+    // log index and title
+    // console.log(index + title);
+    
     // Use the fields created in exports.onCreateNode
     const locale = file.fields.locale;
     const isDefault = file.fields.isDefault;
@@ -145,8 +153,19 @@ exports.createPages = async ({ graphql, actions }) => {
     // Setting a template for page or post depending on the content
     const template = isPage ? pageTemplate : postTemplate;
 
+    
+
     // Count posts
     postsTotal = isPage ? postsTotal + 0 : postsTotal + 1;
+
+    // Count categories
+    if(!isPage && category){
+      // if locale in categories is undefined set it as empty array
+      categories[locale] = categories[locale] || []
+      // if category in array don't do anything else push it in as obj and count how many
+      let clc  =  categories[locale][category]
+      categories[locale][category] = clc ? clc + 1 : 1
+    }
 
     createPage({
       path: localizedSlug({ isDefault, locale, slug, isPage }),
@@ -161,16 +180,42 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
+  // log categories
+  // console.log(categories);
+
   // Creating Posts List and its Pagination
   const postsPerPage = 4;
   const langs = Object.keys(locales).length;
   const numPages = Math.ceil(postsTotal / langs / postsPerPage);
 
   Object.keys(locales).map(lang => {
-    // Use the values defined in "locales" to construct the path
+    // Use the values defined in "locales" to construct the path for blog
     const localizedPath = locales[lang].default
       ? '/blog'
       : `${locales[lang].path}/blog`;
+
+    // Use the values defined in "locales" to construct the path for categories
+    const localizedCategoriesPath = locales[lang].default
+      ? '/categories'
+      : `${locales[lang].path}/categories`;
+    
+    console.log(localizedCategoriesPath);
+    console.log(categories[lang]);
+    
+    Object.keys(categories[lang]).map(category =>{
+      createPage({
+        path: `${localizedCategoriesPath}/${_.kebabCase(category)}`,
+        component: categoriesTemplate,
+        context:{
+          locale: lang,
+          dateFormat: locales[lang].dateFormat,
+          category: category,
+          number: categories[lang][category]
+        }
+      })
+      // console.log()
+    })
+
 
     return Array.from({ length: numPages }).forEach((_, index) => {
       createPage({

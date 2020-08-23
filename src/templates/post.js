@@ -1,5 +1,5 @@
-import React from 'react';
-import { graphql, Link } from 'gatsby';
+import React, {useEffect}  from 'react';
+import { graphql, Link, navigate } from 'gatsby';
 import TitlePage from '../components/TitlePage';
 import SEO from '../components/seo';
 import StyledBackgroundSection from '../components/BackgroundSection'
@@ -14,6 +14,17 @@ import styled from 'styled-components';
 import * as S from '../components/Content/styled';
 
 const Post = props => {
+  useEffect( () => {
+    // Anything in here is fired on component mount.
+    window.addEventListener('scroll', function() {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+         console.log("you're at the bottom of the page");
+        //  navigate(`/tw/blog/r學習筆記］如何繪製存活曲線？`)
+         navigate(-1)
+         //show loading spinner and make fetch request to api
+      }
+   });
+ }, []);
   const post = props.data.markdownRemark;
   // const language = post.fields.locale=='tw'?'zh':post.fields.locale
   const image = post.frontmatter.image
@@ -29,6 +40,11 @@ const Post = props => {
     title: post.frontmatter.title,
     // language: language
   }
+//   $(window).scroll(function() {
+//     if($(window).scrollTop() + $(window).height() == $(document).height()) {
+//         alert("bottom!");
+//     }
+//  });
   return (
     <>
       <SEO

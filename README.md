@@ -38,14 +38,15 @@
 - [x] Make TOC sidebar title i18n ready 08/16
 - [x] Make Comment title i18n ready 08/16
 - [x] Fix Chinese CommentTitle no show after refresh 08/16
+- [ ] Add mindmap to blog using markdown https://github.com/gera2ld/gatsby-remark-markmap
 - [ ] Logic Post when into SinglePost close side menu automatically -> Need React Hook
 - [ ] Auto Next Post at the end of the post
 - [ ] Next post & Previus post
-- [ ] /blog click translate button wrong url page
 - [ ] Post Title url change without update browser history
 
 * Dev
 - [x] Dark/ White Theme 08/17 04:00
+- [x] /blog click translate button wrong url page
 
 
 
