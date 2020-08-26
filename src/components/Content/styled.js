@@ -441,7 +441,7 @@ export const Content = styled.section`
   }
 
   pre {
-    background-color: #f8f8f8;
+    // background-color: #f8f8f8;
     border: 1px solid #cccccc;
     font-size: 13px;
     line-height: 19px;

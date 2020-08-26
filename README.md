@@ -45,15 +45,15 @@
 - [ ] Auto Next Post at the end of the post
 - [ ] Next post & Previus post
 - [ ] Post Title url change without update browser history
+- [ ] Google Analytics
 
 * Dev
+- [x] Back for scrolling down to bottom 08/27 06:02
+- [x] Code block background white 08/27 06:07
 
 
 * Bugs
-
-- [ ] Code block background white
-- [ ] Back for scrolling down to bottom
-- [ ] 
+- [ ] Dark Mode refresh error
 
 ## 1.2. This blog is created by using iceberg gatsby template
 
