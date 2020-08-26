@@ -45,15 +45,16 @@
 - [ ] Auto Next Post at the end of the post
 - [ ] Next post & Previus post
 - [ ] Post Title url change without update browser history
-- [ ] Google Analytics
+- [ ] [Addon] Google Analytics
 
 * Dev
-- [x] Back for scrolling down to bottom 08/27 06:02
-- [x] Code block background white 08/27 06:07
+- [x] [Bug] Back for scrolling down to bottom 08/27 06:02
+- [x] [Bug] Code block background white 08/27 06:07
+- [x] [Bug] Dark Mode refresh error 08/27 06:33
 
 
 * Bugs
-- [ ] Dark Mode refresh error
+- [ ] [Bug] Changing darkmode -> need to refresh  diqus or the widget text is still white
 
 ## 1.2. This blog is created by using iceberg gatsby template
 

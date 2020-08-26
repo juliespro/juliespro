@@ -16,7 +16,7 @@ function setColorsByTheme() {
 
   // Only try to parse value from localStorage if there seems to be one.
   const persistedPreference =
-  localStorage && localStorage[colorModeKey] && JSON.parse(localStorage[colorModeKey])
+  localStorage && localStorage[colorModeKey] && JSON.parse(JSON.stringify(localStorage[colorModeKey]))
   if ([`light`, `dark`, `osPref`].includes(persistedPreference))
     colorMode = persistedPreference
 
