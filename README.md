@@ -47,10 +47,12 @@
 - [ ] Post Title url change without update browser history
 - [ ] [Addon] Google Analytics
 
-* Dev
+* Github
 - [x] [Bug] Back for scrolling down to bottom 08/27 06:02
 - [x] [Bug] Code block background white 08/27 06:07
 - [x] [Bug] Dark Mode refresh error 08/27 06:33
+
+* Dev
 
 
 * Bugs
