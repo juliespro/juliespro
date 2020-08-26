@@ -20,7 +20,7 @@ const Post = props => {
       if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
          console.log("you're at the bottom of the page");
         //  navigate(`/tw/blog/r學習筆記］如何繪製存活曲線？`)
-         navigate(-1)
+        //  navigate(-1)
          //show loading spinner and make fetch request to api
       }
    });
