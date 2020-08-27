@@ -1,8 +1,8 @@
 {
-  "name": "using-i18n",
+  "name": "julies-pro-blog",
   "private": true,
   "description": "Gatsby example site using MDX and dependency-free i18n",
-  "author": "LekoArts <hello@lekoarts.de>",
+  "author": "Andy Tseng <txshon@gmail.com>",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {

@@ -40,17 +40,20 @@
 - [x] Fix Chinese CommentTitle no show after refresh 08/16
 - [x] Dark/ White Theme 08/17 04:00
 - [x] /blog click translate button wrong url page
+- [x] [Bug] Back for scrolling down to bottom 08/27 06:02
+- [x] [Bug] Code block background white 08/27 06:07
+- [x] [Bug] Dark Mode refresh error 08/27 06:33
+- [x] [Addon] Google Analytics 08/27 08:30
 - [ ] Add mindmap to blog using markdown https://github.com/gera2ld/gatsby-remark-markmap
 - [ ] Logic Post when into SinglePost close side menu automatically -> Need React Hook
 - [ ] Auto Next Post at the end of the post
 - [ ] Next post & Previus post
 - [ ] Post Title url change without update browser history
-- [ ] [Addon] Google Analytics
+- [ ] Markdown side-by-side image
+- [ ] Markdown Full-width image
+- [ ] image-box
 
 * Github
-- [x] [Bug] Back for scrolling down to bottom 08/27 06:02
-- [x] [Bug] Code block background white 08/27 06:07
-- [x] [Bug] Dark Mode refresh error 08/27 06:33
 
 * Dev
 

@@ -64,7 +64,7 @@ collections:
 
     #Posts (Traditional Chinese)
     - name: 'posts-tw' # Used in routes, e.g., /admin/collections/blog
-      label: 'Posts (Traditional Chinese)' # Used in the UI
+      label: '文章 (正體中文)' # Used in the UI
       folder: 'blog' # The path to the folder where the documents are stored
       create: true # Allow users to create new documents in this collection
       slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
@@ -72,6 +72,7 @@ collections:
       format: frontmatter
       fields: # The fields for each document, usually in front matter
           - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Slug', name: 'slug', widget: 'string' }
           - { label: 'Description', name: 'description', widget: 'string' }
           - {
                 label: 'Date',
