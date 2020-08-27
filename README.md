@@ -55,7 +55,7 @@
 * Github
 
 * Dev
-- [x] image-box -> Medium Zoom
+- [x] image-box -> Medium Zoom 08/28 1:19
 
 
 * Bugs

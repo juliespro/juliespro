@@ -67,9 +67,9 @@ const Post = props => {
         
       </S.Sidebar>
       {/* <CommentCount config={disqusConfig} placeholder={'...'} /> */}
-      <h1 id='comment'>
+      <h2 id='comment'>
         <S.Comment />{comment}
-      </h1>
+      </h2>
       <Disqus config={disqusConfig} />
     </>
   );

@@ -34,7 +34,7 @@ export default function Toc({ headingSelector, getTitle, getDepth, ...rest }) {
     // setHeadings which triggers a rerender, it would cause an infinite loop.
 
     const selector =
-      headingSelector || Array.from({ length: 6 }, (_, i) => `section > div > h` + (i + 1))
+      headingSelector || Array.from({ length: 5 }, (_, i) => `section > div > h` + (i + 2))
     const nodes = Array.from(document.querySelectorAll(selector))
     const titles = nodes.map(node => ({
       title: getTitle ? getTitle(node) : node.innerText,
