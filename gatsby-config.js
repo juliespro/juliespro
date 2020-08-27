@@ -83,6 +83,14 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
+          {
+            resolve: `gatsby-remark-images-medium-zoom`, // Important!
+            options: {
+              background: 'var(--color-background)',
+              scrollOffset: 0,
+              margin: -25
+            }
+          },
           `gatsby-remark-autolink-headers`,
           `gatsby-remark-lazy-load`,
           `gatsby-remark-prismjs`, // It needs to be the last one

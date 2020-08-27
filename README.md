@@ -51,15 +51,18 @@
 - [ ] Post Title url change without update browser history
 - [ ] Markdown side-by-side image
 - [ ] Markdown Full-width image
-- [ ] image-box
 
 * Github
 
 * Dev
+- [x] image-box -> Medium Zoom
 
 
 * Bugs
 - [ ] [Bug] Changing darkmode -> need to refresh  diqus or the widget text is still white
+- [ ] [Bug] Post Url link anchor dark mode cannot see
+- [ ] [Bug] TOC remove title -> H1 in the list
+- [ ] [Bug] Disqus title add br tag for spacing
 
 ## 1.2. This blog is created by using iceberg gatsby template
 
