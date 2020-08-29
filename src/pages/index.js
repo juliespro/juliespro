@@ -8,6 +8,7 @@ import useTranslations from '../components/useTranslations';
 import StyledBackgroundSection from '../components/BackgroundSection'
 import Hero from '../components/Hero'
 import * as S from '../components/ListWrapper/styled';
+import {Container as BLContainer}  from '../layouts/styled';
 
 const Index = ({ data: { allMarkdownRemark,fileName } }) => {
   // useTranslations is aware of the global context (and therefore also "locale")
@@ -22,14 +23,26 @@ const Index = ({ data: { allMarkdownRemark,fileName } }) => {
 
   const postList = allMarkdownRemark.edges;
   const heroFluid = fileName.childImageSharp.fluid
+  const sublineStyle = {
+    color: 'white',
+    textShadow: 'rgb(0, 0, 0) 0px 0px 60px'
+  }
   return (
     <div className="homepage">
       <SEO title="Home" />
       {/* <StyledBackgroundSection></StyledBackgroundSection> */}
-      <Hero fluid={heroFluid}></Hero>
-      <TitlePage text={hello} />
-      <p>{subline}</p>
-      <hr style={{ margin: `2rem 0` }} />
+      <Hero fluid={heroFluid} height='600'>
+        <BLContainer style={{
+          display: 'flex',
+          flexDirection: 'column',
+          height: '100%',
+        }}>
+          <TitlePage text={hello} marginTop='auto'/>
+          <p style={sublineStyle}>{subline}</p>
+        </BLContainer>
+      </Hero>
+      
+      {/* <hr style={{ margin: `2rem 0` }} /> */}
       <h2>
         <strong>{latestPosts}</strong>
       </h2>

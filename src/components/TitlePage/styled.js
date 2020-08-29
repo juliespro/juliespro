@@ -5,9 +5,9 @@ export const TitleElement = styled.h1`
   line-height: 140%;
   font-size: 3rem;
   font-weight: bold;
-  // margin-top: -115px;
-  // color: white;
-  // text-shadow: rgb(0, 0, 0) 0px 0px 28px;
+  margin-top: ${props => props.marginTop ? props.marginTop : '-115px'}; 
+  color: white;
+  text-shadow: rgb(0, 0, 0) 0px 0px 60px;
   margin-bottom: var(--space-lg);
 
   ${media.greaterThan('medium')`

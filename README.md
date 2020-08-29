@@ -56,12 +56,12 @@
 
 * Dev
 - [x] image-box -> Medium Zoom 08/28 1:19
+- [x] [Bug] TOC remove title -> H1 in the list
 
 
 * Bugs
 - [ ] [Bug] Changing darkmode -> need to refresh  diqus or the widget text is still white
 - [ ] [Bug] Post Url link anchor dark mode cannot see
-- [ ] [Bug] TOC remove title -> H1 in the list
 - [ ] [Bug] Disqus title add br tag for spacing
 
 ## 1.2. This blog is created by using iceberg gatsby template

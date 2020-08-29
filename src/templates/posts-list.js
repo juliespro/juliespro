@@ -5,8 +5,8 @@ import TitlePage from '../components/TitlePage';
 import SEO from '../components/seo';
 import Hero from "../components/Hero";
 import Pagination from '../components/Pagination';
-
 import * as S from '../components/ListWrapper/styled';
+import {Container as BLContainer}  from '../layouts/styled';
 
 const Blog = props => {
   const postList = props.data.allMarkdownRemark.edges;
@@ -23,8 +23,18 @@ const Blog = props => {
   return (
     <>
       <SEO title="Blog" />
-      <Hero fluid={heroFluid}></Hero>
-      <TitlePage text="Blog" />
+      {/* <Hero fluid={heroFluid}></Hero>
+      <TitlePage text="Blog" /> */}
+      <Hero fluid={heroFluid} height='600'>
+        <BLContainer style={{
+          display: 'flex',
+          flexDirection: 'column',
+          height: '100%',
+        }}>
+          <TitlePage text={"Blog"} marginTop='auto'/>
+        </BLContainer>
+      </Hero>
+
 
       <S.ListWrapper>
         {postList.map(

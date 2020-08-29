@@ -21,6 +21,8 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const Container = styled.div`
+// text shadow
+  text-shadow: rgb(0, 0, 0) 0px 0px 60px;
   display: flex;
   flex-direction: column;
   max-width: var(--width-container);

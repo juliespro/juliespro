@@ -5,6 +5,7 @@ import * as S from '../components/ListWrapper/styled';
 import TitlePage from '../components/TitlePage';
 import SEO from '../components/seo';
 import Hero from "../components/Hero";
+import {Container as BLContainer}  from '../layouts/styled';
 
 const Category = props =>{
     const postList = props.data.allMarkdownRemark.edges;
@@ -13,10 +14,23 @@ const Category = props =>{
     return(
         <>
             <SEO title={category} />
-            <Hero fluid={heroFluid}></Hero>
-            <TitlePage text={category} />
-            <h3>  此分類有 {number} 篇文章 </h3>
-            <br/>
+            <Hero fluid={heroFluid} height='600'>
+              <BLContainer style={{
+                display: 'flex',
+                flexDirection: 'column',
+                height: '100%',
+              }}>
+                <TitlePage text={category} marginTop='auto' />
+                <h3 style={{
+                  color: 'white',
+                  textShadow: 'rgb(0, 0, 0) 0px 0px 60px',
+                  fontWeight: 'bold',
+                  fontSize: '1.2em',
+                }}>  此分類有 {number} 篇文章 </h3>
+              </BLContainer>
+              
+            </Hero>
+            
             <S.ListWrapper>
                 {postList.map(
                 ({
