@@ -44,6 +44,8 @@
 - [x] [Bug] Code block background white 08/27 06:07
 - [x] [Bug] Dark Mode refresh error 08/27 06:33
 - [x] [Addon] Google Analytics 08/27 08:30
+- [x] image-box -> Medium Zoom 08/28 1:19
+- [x] [Bug] TOC remove title -> H1 in the list
 - [ ] Add mindmap to blog using markdown https://github.com/gera2ld/gatsby-remark-markmap
 - [ ] Logic Post when into SinglePost close side menu automatically -> Need React Hook
 - [ ] Auto Next Post at the end of the post
@@ -55,14 +57,14 @@
 * Github
 
 * Dev
-- [x] image-box -> Medium Zoom 08/28 1:19
-- [x] [Bug] TOC remove title -> H1 in the list
+- [x] [Style] Hero photo with text 08/29 21:45
 
 
 * Bugs
 - [ ] [Bug] Changing darkmode -> need to refresh  diqus or the widget text is still white
 - [ ] [Bug] Post Url link anchor dark mode cannot see
 - [ ] [Bug] Disqus title add br tag for spacing
+- [ ] [Bug] Clean the node transform to image Node
 
 ## 1.2. This blog is created by using iceberg gatsby template
 

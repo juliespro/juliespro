@@ -1,7 +1,23 @@
+const nodejieba = require('nodejieba');
+nodejieba.load({dict: './dictTW.txt'});
+var FlexSearch = require("flexsearch")
+var index = FlexSearch.create({
+  encode: false,
+  tokenize: function(str){
+    console.log(nodejieba.cut(str))
+    return nodejieba.cut(str);
+  }
+});
+// Testing Flex search
+// index.add(0,"【花蓮｜輕裝登山推薦】羊頭山一日百岳單攻");
+// index.add(1,"劍龍陵、鋸齒陵、茶壺山、登山");
+// var result = index.search("劍龍");
+// console.log(result);
+
 module.exports = {
   siteMetadata: {
-    title: `茱莉部落`,
-    description: `有關茱莉的學術～旅遊～記趣～`,
+    title: `Julie's Pro`,
+    description: `Julie's Blog about public health research,  mountain climbing and coding`,
     author: `@juliespro`,
     siteUrl: `https://julies.pro`,
   },
@@ -12,6 +28,7 @@ module.exports = {
         trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
       },
     },
+    `gatsby-plugin-advanced-sitemap`,
     // It needs to be the first one to work with gatsby-remark-images
     {
       resolve: `gatsby-source-filesystem`,
@@ -131,7 +148,45 @@ module.exports = {
         shortname: `juliespro`
       }
     },
-    
+    {
+      resolve: 'gatsby-plugin-flexsearch-global',
+      options: {
+        languages: ['tw'],
+        type: 'MarkdownRemark',
+        fields: [
+          {
+            name: 'title',
+            indexed: true,
+            resolver: 'frontmatter.title',
+            attributes: {
+              encode: false,
+              tokenize: function(str){
+                return nodejieba.cut(str);
+              }
+            },
+            store: true,
+          },
+          // {
+          //   name: 'description',
+          //   indexed: true,
+          //   resolver: 'frontmatter.description',
+          //   attributes: {
+          //     encode: 'balance',
+          //     tokenize: 'strict',
+          //     threshold: 6,
+          //     depth: 3,
+          //   },
+          //   store: false,
+          // },
+          // {
+          //   name: 'url',
+          //   indexed: false,
+          //   resolver: 'fields.slug',
+          //   store: true,
+          // },
+        ]
+      }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
